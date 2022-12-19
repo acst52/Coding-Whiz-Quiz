@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+      <!-- basic header tags with title, reset & style CSS links: -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -9,12 +10,16 @@
         <link rel="stylesheet" href="./assets/style.css" />
     </head>
     <body>
+      <!-- title of page contained in following div: -->
         <div class="header">
             <h1 id="title">Whiz Quiz: JavaScript Basics!</h1>
         </div>
+      <!-- link to highscore page is here: -->
         <div class="scores"><a href="highscores.html">View Highscores</a></div>
+      <!-- timer div: -->
         <div><p id="timerBox">Time left: <span id="timer">60</span></p></div>
       <main> 
+      <!-- section below contains quiz, incl start button, questions and end screen: -->
         <section id="container">
         <div id="startScreen"><button id="start">Start Quiz!</button></div>
         <div id="questions" class="hide">
@@ -28,6 +33,7 @@
           <button id="submit">Submit</button>
         </div>
         </section>
+      <!-- JavaScript file for this main page linked here: -->
         <script src="./assets/script.js"></script>
     </body>
 </html>
@@ -36,42 +42,7 @@
 
 
 
-
-<!-- 
-  <div id="quiz" class="hide">
-          <div id="qImg"><img src="image link"></div>
-          
-              <div id="question"><p>What does HTML stand for?</p></div>
-
-              <div id="choices">
-   
-    <div class="choice" id="A" onclick="checkAnswer('A')">A</div>
-    <div class="choice" id="B" onclick="checkAnswer('B')">B</div>
-    <div class="choice" id="C" onclick="checkAnswer('C')">C</div>
-  </div>
-
-  <div id="progress"> <div class="prog"> </div> </div>
-  <div id="score" style="display: none">
-    <img src="./assets/images/yellow-smiley.png"><p>50%</p>
-  </div>
-Create a container element to hold the questionnaire 
-<div id="questionnaire">
-
-Create a question element to hold the question text 
-    <div id="question">
-      What is the capital of France?
-    </div>
-    
-Create a list of possible answers 
-    <ul id="answers">
-      <li>Paris</li>
-      <li>London</li>
-      <li>Berlin</li>
-      <li>Madrid</li>
-    </ul>
-    
-    </div>
-    
+<!--
  Use JavaScript to listen for clicks on the answer elements 
     <script>
       // Get a reference to the answers list
@@ -116,7 +87,6 @@ Create a list of possible answers
         </div>
         <div><p id="timerBox">Time left: <span id="timer">60</span></p></div>
       <main> 
-    NEW CODE STARTED HERE...
         <div id="start">Start Quiz!</div>
         <div id="quiz" style="display:none;">
           <div id="qImage"><img src="./assets/images/Brain-Better-Luck-Next-Time.png"></div>
