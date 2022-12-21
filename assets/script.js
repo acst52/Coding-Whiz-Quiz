@@ -28,7 +28,6 @@ let initialsElement = document.querySelector("#initials");
 
 let submitButton = document.querySelector("#submit");
 
-
 // 2. Create questions inside an array. Answers stored as obj inside arr.
 
 let questions = [ {
@@ -139,10 +138,12 @@ if (initials !== ''){
     };
     highscores.push(finalScoreData);
     window.localStorage.setItem("highscores", JSON.stringify(highscores));
-    window.location.href="highscores.html";
+    // window.location.href="highscores.html"; ... nah lets open this in a tab:
+    window.open("highscores.html", "_blank");
 }};
 
-submitButton.addEventListener('submit', highscoreStore)
+submitButton.addEventListener('click', highscoreStore)
 
-
-    // honey:core-sdk:*   ... askBCS about local storage issue 
+    // honey:core-sdk:*   ... askBCS about local storage issue
+        // SO the issue was the submitButton event: don't use "submit", because submit always refreshes the page, 
+        // as it submits data to be used on a form. Use click b/c it does not refresh page and will do the fcn you call!
