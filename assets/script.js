@@ -28,32 +28,33 @@ let initialsElement = document.querySelector("#initials");
 
 let submitButton = document.querySelector("#submit");
 
+
 // 2. Create questions inside an array. Answers stored as obj inside arr.
 
 let questions = [ {
-    question : "What does HTML stand for?", 
-    choices : ["Answer 1", "Answer 2", "Answer 3"],
-    answer : "Answer 1"
+    question : "What are you doing?", 
+    choices : ["You sent me this quiz.. tf?", "dissociating", "Answer 3"],
+    answer : "dissociating"
 },
 {
-    question : "Question 3",
-    choices : ["Answer 4", "Answer 5", "Answer 6"],
-    answer : "Answer 5"
+    question : "Is this the second question?",
+    choices : ["Yes", "Ever? No", "Yummy"],
+    answer : "Yes"
 },
 {
-    question : "Question 4",
-    choices : ["Answer 7", "Answer 8", "Answer 9"],
-    answer : "Answer 9"
+    question : "Do you like JavaScript?",
+    choices : ["FUCK YES", "FUCK NO", "NOOOOO"],
+    answer : "FUCK NO"
 },
 {
-    question : "Question 5",
-    choices : ["Answer 10", "Answer 11", "Answer 12"],
-    answer : "Answer 11"
+    question : "Did you know this quiz was scored by time and you're penalized for wrong answers?",
+    choices : ["No", "That does not make sense", "Correct"],
+    answer : "That does not make sense"
 },
 {
-    question : "Question 6",
-    choices : ["Answer 13", "Answer 14", "Answer 15"],
-    answer : "Answer 14"
+    question : "This is the last question. QUICK! CLICK B!",
+    choices : ["Is this B???", "This has to be B, right?", "B"],
+    answer : "B"
 } ];
 
 // 3. click event, startQuiz fcn
