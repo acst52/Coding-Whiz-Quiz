@@ -32,29 +32,29 @@ let submitButton = document.querySelector("#submit");
 // 2. Create questions inside an array. Answers stored as obj inside arr.
 
 let questions = [ {
-    question : "What are you doing?", 
-    choices : ["You sent me this quiz.. tf?", "dissociating", "Answer 3"],
-    answer : "dissociating"
+    question : "What is the best way to name a variable?", 
+    choices : ["let", "const", "var", "let & const"],
+    answer : "let"
 },
 {
-    question : "Is this the second question?",
-    choices : ["Yes", "Ever? No", "Yummy"],
-    answer : "Yes"
+    question : "What is the difference between local and session storage?",
+    choices : ["They are the same", "Local storage saves data on your device, session saves in the browser", "Both save data in the browser; session until you close the browser and local saves until it is manually cleared"],
+    answer : "Both save data in the browser; session until you close the browser and local saves until it is manually cleared"
 },
 {
-    question : "Do you like JavaScript?",
-    choices : ["FUCK YES", "FUCK NO", "NOOOOO"],
-    answer : "FUCK NO"
+    question : "True or false: a Boolean can only be true or false.",
+    choices : ["True", "False"],
+    answer : "True"
 },
 {
-    question : "Did you know this quiz was scored by time and you're penalized for wrong answers?",
-    choices : ["No", "That does not make sense", "Correct"],
-    answer : "That does not make sense"
+    question : "What will print if we run the following for loop: for(var i = 0; i < 5; i++) { console.log(i); }",
+    choices : ["0 1 2 3 4 5", "1 2 3 4 5", "0 1 2 3 4"],
+    answer : "0 1 2 3 4"
 },
 {
-    question : "This is the last question. QUICK! CLICK B!",
-    choices : ["Is this B???", "This has to be B, right?", "B"],
-    answer : "B"
+    question : "True or false: if you define a variable inside a function, you can use it in a different function",
+    choices : ["True", "False"],
+    answer : "False"
 } ];
 
 // 3. click event, startQuiz fcn
@@ -144,7 +144,3 @@ if (initials !== ''){
 }};
 
 submitButton.addEventListener('click', highscoreStore)
-
-    // honey:core-sdk:*   ... askBCS about local storage issue
-        // SO the issue was the submitButton event: don't use "submit", because submit always refreshes the page, 
-        // as it submits data to be used on a form. Use click b/c it does not refresh page and will do the fcn you call!
