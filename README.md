@@ -2,7 +2,7 @@
 
 Week 4's Web API Challenge is to use everything we've learned so far to create a timed quiz with locally stored scores that display on a highscore page.
 
-The quiz is hosted by GitHub pages and can be found at: 
+The quiz is hosted by GitHub pages and can be found at: https://acst52.github.io/Coding-Whiz-Quiz/
 
 
 ### Acceptance Criteria
