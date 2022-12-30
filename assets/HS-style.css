@@ -3,29 +3,36 @@
     padding: 3px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
+  background-image: url("./images/Arcade-Game-Screen.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  padding: 80px;
   display: flex;
   flex-direction:column;
   justify-content:center;
   align-items:center;
   line-height: 2;
   font-family: 'Courier New', Courier, monospace;
-  color: greenyellow;
-  background-color: black;
 }
 
 .header {
-  display: flex;
-  align-items: left;
-  font-size: 60px;
-  color:blueviolet;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(22, 0, 58);
   padding: 20px;
 }
 
 #scoreList {
   color: greenyellow;
   text-align: center;
-  font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 30px;
+  max-height: 250px;
 }
 
 button {
@@ -34,4 +41,14 @@ button {
   background-color: rgb(108, 230, 255);
   color: black;
   border: 3px solid #ff00c3;
+}
+
+@media screen and (max-width: 490px) {
+  body {
+    font-size: 15px;
+    padding: 5px;
+    }
+  .header {
+    font-size: 30px;
+  }
 }
